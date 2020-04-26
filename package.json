@@ -1,6 +1,6 @@
 {
   "name": "font-toolkit",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Slicing and converting fonts.",
   "main": "dist/src/index.js",
   "directories": {
