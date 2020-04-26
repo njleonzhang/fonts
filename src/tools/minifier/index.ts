@@ -62,7 +62,7 @@ export class Minifier {
     if (typeof str !== "string" || str.length === 0) throw new Error("deformed parameter");
 
     const cps: number[] = Array.from(str).map(s => s.codePointAt(0)!);
-    cps.push(0);
+    // cps.push(0); // the space cannot be pushed
     const lookupResult = this._cmap.lookupUnicode(cps, this._glyf, this._loca);
 
     const newFont = new Font();
